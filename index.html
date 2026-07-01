@@ -509,6 +509,25 @@ body {
   color: var(--text-muted);
   border: 1px solid var(--border-default);
 }
+.badge-hot {
+  background: rgba(239, 68, 68, 0.15);
+  color: var(--negative);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+/* ============ ANNOUNCEMENT BAR ============ */
+.announce-bar {
+  position: relative;
+  z-index: 101;
+  background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
+  color: #fff;
+  text-align: center;
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  letter-spacing: 0.01em;
+}
+.announce-bar a { color: #fff; text-decoration: underline; text-underline-offset: 2px; }
+.announce-bar strong { font-weight: 800; }
 
 .card-title {
   font-size: 1.125rem;
@@ -983,7 +1002,7 @@ body {
       Duc Nguyen
     </a>
     <div class="nav-stats">
-      <div class="nav-stat"><strong>19</strong> products</div>
+      <div class="nav-stat"><strong>24</strong> products</div>
       <div class="nav-stat"><strong>3</strong> free</div>
     </div>
     <div class="nav-follow">
@@ -991,6 +1010,11 @@ body {
     </div>
   </div>
 </nav>
+
+<!-- ============ ANNOUNCEMENT BAR ============ -->
+<div class="announce-bar">
+  🎉 <strong>Store is live & converting!</strong> First paid orders shipped this week — grab the <a href="#free">3 free downloads</a> before the next update. New products added weekly.
+</div>
 
 <!-- ============ HERO ============ -->
 <section class="hero">
@@ -1010,7 +1034,7 @@ body {
   <div class="hero-content">
     <div class="hero-badge">
       <span class="hero-badge-dot"></span>
-      19 Products · Built for Developers
+      24 Products · First Paid Orders This Week 🎉
     </div>
     <h1><span class="gradient-text">Ship Faster. Earn More. Work Smarter.</span></h1>
     <p class="hero-sub">Battle-tested checklists, cheat sheets, prompt libraries, and AI toolkits — everything you need to build a profitable one-person business.</p>
@@ -1030,7 +1054,7 @@ body {
         <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=64&h=64&fit=crop&crop=face" alt="User" width="32" height="32" loading="lazy">
         <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=64&h=64&fit=crop&crop=face" alt="User" width="32" height="32" loading="lazy">
       </div>
-      <p class="hero-social-text"><strong>Trusted by developers</strong> building with AI in 2026</p>
+      <p class="hero-social-text"><strong>🎉 Real orders this week</strong> — thank you to our first buyers! 3 free products still available.</p>
     </div>
   </div>
 </section>
@@ -1039,7 +1063,7 @@ body {
 <div class="stats-bar">
   <div class="stats-bar-inner">
     <div class="stat-item">
-      <div class="stat-number">19</div>
+      <div class="stat-number">24</div>
       <div class="stat-label">Digital Products</div>
     </div>
     <div class="stat-item">
@@ -1103,6 +1127,7 @@ body {
     <div class="card-top">
       <div class="card-icon card-icon-green">🤖</div>
       <div class="card-badges">
+        <span class="badge badge-hot">🔥 Most Downloaded</span>
         <span class="badge badge-free">Free</span>
       </div>
     </div>
@@ -1146,6 +1171,7 @@ body {
     <div class="card-top">
       <div class="card-icon card-icon-green">☀️</div>
       <div class="card-badges">
+        <span class="badge badge-best">🔥 Bestseller</span>
         <span class="badge badge-free">Free</span>
       </div>
     </div>
@@ -1508,6 +1534,7 @@ body {
     <div class="card-top">
       <div class="card-icon card-icon-emerald">🔄</div>
       <div class="card-badges">
+        <span class="badge badge-best">🔥 Bestseller</span>
         <span class="badge badge-category">Weekly</span>
       </div>
     </div>
